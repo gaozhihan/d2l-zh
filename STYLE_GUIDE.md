@@ -15,16 +15,14 @@
     * 使用中文双引号
 * 符号描述
     * 时刻t（不是t时刻）
-	* 形状使用中文标点
-		*（10，20）不是(10, 20)
+	* 形状使用英文标点
+        * (10, 20) 不是 （10，20）
 * 人称
     * 第一人称 → 我们
-    * 第二人称 → 你、大家
+    * 第二人称 → 读者、你、大家
 * 工具或部件
-    * Gluon, MXNet, NumPy, spaCy, NDArray, Symbol, Block, HybridBlock, ResNet-18, Fashion-MNIST
+    * Gluon, MXNet, NumPy, spaCy, ResNet-18, Fashion-MNIST, matplotlib
         * 这些都作为词，不要带重音符
-    * Sequential类/实例, HybridSequential类/实例
-        * 不要带重音符
     * `backward`函数
         * 不是“`backward()`函数” （不要带括号）
     * for循环
@@ -129,12 +127,12 @@
         * DataLoader实例：train_iter, test_iter, data_iter
 * 注释
     * 中文
-    * 中文和英文之间加空格
-    * 句末加句号
+    * 句末不加句号
 * 书本页宽限制
-    * 每行不超过79字符
+    * 每行不超过78字符
+        * In [X]: 79字符不会自动换行（X = 1, ..., 9）
+    	* In [XX]: 78字符不会自动换行（XX = 10, 11, ..., 99）
     * 打印结果自动换行
-* utils代码写进附录
 * imports
     * import alphabetically
     * from mxnet.gluon import data as gdata, loss as gloss, nn, utils as gutils
